@@ -154,7 +154,7 @@ class GPT3ChatBot(commands.Cog):
         try:
             response = openai.Completion.create(
                 api_key=key,
-                engine="curie",  # ada: $0.0008/1K tokens, babbage $0.0012/1K, curie$0.0060/1K, davinci $0.0600/1K
+                engine="davinci",  # ada: $0.0008/1K tokens, babbage $0.0012/1K, curie$0.0060/1K, davinci $0.0600/1K
                 prompt=prompt_text,
                 temperature=0.8,
                 max_tokens=200,
